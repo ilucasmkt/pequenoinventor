@@ -1714,7 +1714,7 @@ if(!fx())document.addEventListener('DOMContentLoaded',fx);
         if (curEl && curEl.value) data.currency = curEl.value
         if (price > 0) {
           data.value = price
-          data.contents = [{ id: snEl && snEl.value ? snEl.value : 'Producto principal', quantity: 1, item_price: price }]
+          data.contents = [{ id: snEl && snEl.value ? snEl.value : 'Produto principal', quantity: 1, item_price: price }]
         }
         window.metaTrackInitiateCheckout(data)
       }
