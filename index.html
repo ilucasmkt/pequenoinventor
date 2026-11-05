@@ -422,7 +422,7 @@ window.INVENTALAB_REAL_SALES = window.INVENTALAB_REAL_SALES || [
 <li>💻 <span>Tablet, computador ou celular</span></li>
 <li>🖨️ <span>Você imprime só o que vai usar</span></li>
 </ul>
-<div class="lp-cta-mid"><a class="lp-btn lp-btn-yellow" data-checkout="" href="/checkout">Quero os 120 projetos →</a><div class="lp-btn-note">📧 Entrega imediata por e-mail · Produto 100% digital · Acesso vitalício</div></div>
+<div class="lp-cta-mid"><a class="lp-btn lp-btn-yellow" data-cakto="" href="https://pay.cakto.com.br/366ndhm_1282980">Quero os 120 projetos →</a><div class="lp-btn-note">📧 Entrega imediata por e-mail · Produto 100% digital · Acesso vitalício</div></div>
 </div>
 </section>
 <section class="lp-inside lp-alt">
@@ -452,7 +452,7 @@ window.INVENTALAB_REAL_SALES = window.INVENTALAB_REAL_SALES || [
 <div class="lp-feature"><div class="lp-ic">🚀</div><h4>3. Inventa</h4><p>O desafio final convida a criança a mudar algo e criar a sua própria versão.</p></div>
 </div>
 <div class="lp-age-note"><b>Escolha por idade, tempo e ajuda do adulto</b>Cada projeto indica a idade, quanto tempo leva, o nível e se precisa de um adulto. Você começa por onde quiser.</div>
-<div class="lp-cta-mid"><a class="lp-btn lp-btn-yellow" data-checkout="" href="/checkout">Quero os 120 projetos →</a><div class="lp-btn-note">📧 Entrega imediata por e-mail · Produto 100% digital · Acesso vitalício</div></div>
+<div class="lp-cta-mid"><a class="lp-btn lp-btn-yellow" data-cakto="" href="https://pay.cakto.com.br/366ndhm_1282980">Quero os 120 projetos →</a><div class="lp-btn-note">📧 Entrega imediata por e-mail · Produto 100% digital · Acesso vitalício</div></div>
 </div>
 </section>
 <section class="lp-dolores">
@@ -508,7 +508,7 @@ window.INVENTALAB_REAL_SALES = window.INVENTALAB_REAL_SALES || [
 <li><span>Garantia de 30 dias</span><span class="lp-inc">INCLUSA</span></li>
 </ul>
 </div>
-<div class="lp-cta-mid"><a class="lp-btn lp-btn-yellow" data-checkout="" href="/checkout">Quero os 120 projetos →</a><div class="lp-btn-note">📧 Entrega imediata por e-mail · Produto 100% digital · Acesso vitalício</div></div>
+<div class="lp-cta-mid"><a class="lp-btn lp-btn-yellow" data-cakto="" href="https://pay.cakto.com.br/366ndhm_1282980">Quero os 120 projetos →</a><div class="lp-btn-note">📧 Entrega imediata por e-mail · Produto 100% digital · Acesso vitalício</div></div>
 </div>
 </section>
 <section class="lp-como lp-alt">
@@ -545,7 +545,7 @@ window.INVENTALAB_REAL_SALES = window.INVENTALAB_REAL_SALES || [
 </div>
 <div class="lp-diff-foot">Você leva <b>6 produtos</b> pelo preço de <b>1 única compra</b> 🔥</div>
 </div>
-<a class="lp-btn lp-btn-green" data-checkout="" href="/checkout">Quero os 120 projetos →</a>
+<a class="lp-btn lp-btn-green" data-cakto="" href="https://pay.cakto.com.br/366ndhm_1282980">Quero os 120 projetos →</a>
 <div class="lp-btn-note">📧 Entrega imediata por e-mail · Produto 100% digital · Acesso vitalício</div>
 <div class="lp-payment-trust" style="margin-top:16px;color:var(--lp-ink-soft)">🔒 Compra 100% segura e protegida</div>
 <div class="lp-payment-methods-ar"><img alt="Meios de pagamento disponíveis na Argentina: Mercado Pago, Visa, Mastercard, Naranja, American Express" loading="lazy" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/ce7fe122-11e1-4280-ba61-78ae8b5a6735/1785367324754_medios-1.webp"/></div>
@@ -725,7 +725,7 @@ window.INVENTALAB_REAL_SALES = window.INVENTALAB_REAL_SALES || [
 <ul><li>+120 projetos passo a passo</li><li>5 bônus de presente</li></ul>
 </div>
 </div>
-<div class="pk-cta"><a class="lp-btn lp-btn-yellow" data-checkout="" href="/checkout" id="pk-go"><span data-pk-btn="">Quero só o Mega Pack</span> →</a></div>
+<div class="pk-cta"><a class="lp-btn lp-btn-yellow" data-cakto="" href="https://pay.cakto.com.br/366ndhm_1282980" id="pk-go"><span data-pk-btn="">Quero só o Mega Pack</span> →</a></div>
 <p class="pk-nota">Você vê o total exato antes de pagar e pode tirar os cadernos. 100% digital (PDF), chega na hora no seu e-mail. Pagamento único.</p>
 </div></section>
 <script>
@@ -760,21 +760,13 @@ function pick(k){
   if(lbl) lbl.textContent=BTN[k];
   var ids=k==="completo"?SUELTOS.slice():[];
   try{sessionStorage.setItem("impultienda_upsells",JSON.stringify(ids));}catch(x){}
-  if(go){ if(k==="completo"){go.removeAttribute("data-checkout");go.setAttribute("href","/checkout?upsells="+SEL4);} else {go.setAttribute("data-checkout","");go.setAttribute("href","/checkout");} }
+  if(go){ go.setAttribute("href",k==="completo"?"https://pay.cakto.com.br/373hbob":"https://pay.cakto.com.br/366ndhm_1282980"); }
 }
 for(var i=0;i<opts.length;i++){(function(o){
   o.addEventListener("click",function(){pick(o.getAttribute("data-pk-opt"));});
   o.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();pick(o.getAttribute("data-pk-opt"));}});
 })(opts[i]);}
-if(go) go.addEventListener("click",function(e){
-  var ids=sel==="completo"?SUELTOS.slice():[];
-  try{sessionStorage.setItem("impultienda_upsells",JSON.stringify(ids));}catch(x){}
-  if(sel==="completo"){
-    e.preventDefault(); e.stopImmediatePropagation();
-    var p=new URLSearchParams(location.search); p.set("upsells",ids.join(","));
-    location.href="/checkout?"+p.toString();
-  }
-},true);
+
 })();
 </script>
 <section class="lp-faq lp-alt">
@@ -804,7 +796,7 @@ if(go) go.addEventListener("click",function(e){
 <div class="lp-final-visual">
 <img alt="Família compartilhando uma tarde de projetos criativos" loading="lazy" src="https://aekpgsbqjzqntlbucbts.supabase.co/storage/v1/object/public/store-resources/ce7fe122-11e1-4280-ba61-78ae8b5a6735/1785365468759_hero-padre-hijo-robot-webp.webp"/>
 </div>
-<a class="lp-btn lp-btn-yellow" data-checkout="" href="/checkout">Quero acessar agora →</a>
+<a class="lp-btn lp-btn-yellow" data-cakto="" href="https://pay.cakto.com.br/366ndhm_1282980">Quero acessar agora →</a>
 <div class="lp-btn-note">Acesso imediato · 100% digital · Pagamento único · Garantia de 30 dias</div>
 </div>
 </section>
@@ -1729,7 +1721,23 @@ if(!fx())document.addEventListener('DOMContentLoaded',fx);
       } catch (e) { /* storage bloqueado: seguimos sin UTMs */ }
       window.location.href = '/checkout' + (qs.length ? '?' + qs.join('&') : '')
     })
-  </script> <script src="assets/js/347d7f4f.js" type="module"></script> <div aria-labelledby="downsell-modal-title" aria-modal="true" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm px-4" id="downsell-exit-modal" role="dialog"> <div class="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 sm:p-8 text-center"> <h2 class="text-2xl font-extrabold text-gray-900 leading-tight mb-2" id="downsell-modal-title"> Espera! Temos um presente para você 🎁 </h2> <p class="text-sm text-gray-600 leading-relaxed mb-6"> Antes de sair, veja esta oferta exclusiva com um desconto que só está disponível agora. </p> <button class="w-full text-white py-3.5 rounded-xl font-bold text-base transition-all hover:opacity-90 shadow-sm mb-2" id="downsell-modal-accept" style="background-color: #1e293b;" type="button"> Ver oferta </button> <button class="w-full bg-transparent text-gray-500 py-2 text-sm hover:text-gray-700 transition-colors" id="downsell-modal-dismiss" type="button"> Não, obrigado </button> </div> </div> <input id="downsell-id" type="hidden" value="0eeebe01-1dcc-41c6-9069-106ce6596a00"/> <input id="downsell-trigger" type="hidden" value="exit_intent"/> <input id="downsell-store-id" type="hidden" value="ce7fe122-11e1-4280-ba61-78ae8b5a6735"/> <input id="downsell-offer-href" type="hidden" value="/oferta-especial?store_id=ce7fe122-11e1-4280-ba61-78ae8b5a6735"/> <script>
+  </script> <script>
+document.addEventListener("click",function(e){
+  var el=e.target&&e.target.closest&&e.target.closest("a[data-cakto]"); if(!el) return;
+  e.preventDefault();
+  try{ if(typeof window.metaTrackInitiateCheckout==="function"){ window.metaTrackInitiateCheckout({content_type:"product",num_items:1,currency:"BRL"}); } }catch(x){}
+  var u; try{ u=new URL(el.getAttribute("href")); }catch(x){ return; }
+  try{
+    var cur=new URL(window.location.href), st={};
+    try{ st=JSON.parse(sessionStorage.getItem("impultienda_utm")||"{}")||{}; }catch(x){}
+    ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","fbclid","sck","src"].forEach(function(k){
+      var v=cur.searchParams.get(k)||st[k]; if(v&&!u.searchParams.get(k)) u.searchParams.set(k,String(v).slice(0,512));
+    });
+  }catch(x){}
+  window.location.href=u.toString();
+},true);
+</script>
+<script src="assets/js/347d7f4f.js" type="module"></script>  <script>
     // Resizes <CustomSection /> iframes to match their content height.
     // Each iframe posts {type:'__cs_h__', id, h} from its own srcdoc script.
     window.addEventListener('message', function (e) {
