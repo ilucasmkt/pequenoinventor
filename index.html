@@ -735,7 +735,7 @@ function pick(k){
   if(lbl) lbl.textContent=BTN[k];
   var ids=k==="completo"?SUELTOS.slice():[];
   try{sessionStorage.setItem("impultienda_upsells",JSON.stringify(ids));}catch(x){}
-  if(go){ go.setAttribute("href",k==="completo"?"https://pay.cakto.com.br/373hbob":"https://pay.cakto.com.br/366ndhm_1282980"); }
+  if(go){ go.setAttribute("href",k==="completo"?"https://pay.cakto.com.br/36qa69y":"https://pay.cakto.com.br/366ndhm_1282980"); }
 }
 for(var i=0;i<opts.length;i++){(function(o){
   o.addEventListener("click",function(){pick(o.getAttribute("data-pk-opt"));});
@@ -1702,7 +1702,7 @@ document.addEventListener("click",function(e){
   e.preventDefault();
   var u; try{ u=new URL(el.getAttribute("href")); }catch(x){ return; }
   try{
-    var full=u.pathname.indexOf("373hbob")>-1, val=full?47:27, nm=full?"Pack completo: Mega Pack + 4 cadernos":"Mega Pack de Inventores";
+    var full=u.pathname.indexOf("36qa69y")>-1, val=full?47:27, nm=full?"Pack completo: Mega Pack + 4 cadernos":"Mega Pack de Inventores";
     if(typeof window.fbq==="function"){ window.fbq("track","InitiateCheckout",{value:val,currency:"BRL",content_type:"product",content_name:nm,num_items:1,contents:[{id:nm,quantity:1,item_price:val}]}); }
   }catch(x){}
   try{
