@@ -87,6 +87,7 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #2d2a26; li
 .bonus-section { margin-bottom: 40px; }
 .bonus-header { text-align: center; background: linear-gradient(135deg, #fef3c7, #fde68a); border-radius: 12px 12px 0 0; padding: 16px; border: 1px solid #f5c842; border-bottom: none; }
 .bonus-header p { font-size: 13px; font-weight: 700; color: #92400e; }
+.bonus-header span.val { text-decoration: line-through; }
 .bonus-header span.free { color: #16a34a; font-weight: 800; }
 .bonus-card { background: #fff; border: 1px solid #e8e0d8; border-top: none; padding: 18px 16px; display: flow-root; }
 .bonus-card img { width: 56px; height: 56px; border-radius: 12px; float: left; margin-right: 14px; object-fit: cover; }
@@ -113,6 +114,7 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #2d2a26; li
 .plan-features { list-style: none; padding: 0; text-align: left; margin-bottom: 20px; }
 .plan-features li { font-size: 13px; padding: 6px 0; border-bottom: 1px solid #f5f0eb; display: flex; align-items: center; gap: 8px; }
 .plan-features li::before { content: "✓"; color: #7b2d8e; font-weight: 700; font-size: 14px; }
+.plan-note { font-size: 12px; font-weight: 700; color: #b91c1c; margin-bottom: 16px; }
 .plan-social { font-size: 12px; color: #7b2d8e; font-weight: 600; margin-bottom: 16px; }
 .plan-cta { display: block; width: 100%; padding: 16px; border-radius: 50px; font-size: 15px; font-weight: 800; text-decoration: none; text-align: center; border: none; cursor: pointer; transition: transform 0.2s; }
 .plan-cta:hover { transform: scale(1.02); }
@@ -318,55 +320,54 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
   <h2 class="section-title">🎁 Bônus Exclusivos</h2>
   <div class="bonus-section">
     <div class="bonus-header">
-      <p>5 BÔNUS DE PRESENTE · HOJE VOCÊ RECEBE <span class="free">GRÁTIS</span></p>
+      <p>VALOR TOTAL DE <span class="val">R$ 152</span> · <span class="free">GRÁTIS</span> NO PLANO PREMIUM</p>
     </div>
     <div class="bonus-card">
-      <img src="assets/img/bonus-plano-7-dias.webp" alt="Plano de Inventores para 7 Dias" loading="lazy">
-      <h3>🎁 Plano de Inventores para 7 Dias</h3>
-      <p class="bonus-price">Bônus #1 · <span>Hoje GRÁTIS</span></p>
+      <img src="assets/img/offer-cadernos.webp" alt="Os 4 Cadernos" loading="lazy">
+      <h3>🎁 Os 4 Cadernos</h3>
+      <p class="bonus-price">De R$ 37,00 por <span>ZERO</span></p>
       <ul class="bonus-list">
-        <li>Um desafio diferente por dia durante uma semana</li>
-        <li>Missão final e folha de progresso</li>
+        <li>+154 atividades sem telas</li>
+        <li>Robótica com Movimento, O Grande Desafio Inventor, Cientistas em Casa e Tecnologia sem Telas</li>
       </ul>
     </div>
     <div class="bonus-card">
-      <img src="assets/img/bonus-plano-14-dias.webp" alt="Plano de 14 dias de robótica caseira" loading="lazy">
-      <h3>🎁 Plano de 14 dias de robótica caseira</h3>
-      <p class="bonus-price">Bônus #2 · <span>Hoje GRÁTIS</span></p>
-      <ul class="bonus-list">
-        <li>O que construir, em que ordem e quanto tempo por dia</li>
-        <li>De acordo com a idade e a dificuldade</li>
-      </ul>
-    </div>
-    <div class="bonus-card">
-      <img src="assets/img/bonus-guia-rapido.webp" alt="Guia Rápido de Ajustes e Testes" loading="lazy">
-      <h3>🎁 Guia Rápido de Ajustes e Testes</h3>
-      <p class="bonus-price">Bônus #3 · <span>Hoje GRÁTIS</span></p>
-      <ul class="bonus-list">
-        <li>O que verificar quando uma roda não gira</li>
-        <li>Soluções para guindaste que não levanta e lançador sem força</li>
-      </ul>
-    </div>
-    <div class="bonus-card">
-      <img src="assets/img/bonus-checklist.webp" alt="Checklist de Materiais Recicláveis" loading="lazy">
-      <h3>🎁 Checklist de Materiais Recicláveis</h3>
-      <p class="bonus-price">Bônus #4 · <span>Hoje GRÁTIS</span></p>
-      <ul class="bonus-list">
-        <li>Lista para imprimir</li>
-        <li>Para juntar, separar e guardar os materiais antes de começar</li>
-      </ul>
-    </div>
-    <div class="bonus-card">
-      <img src="assets/img/bonus-40-invencoes.webp" alt="40 Invenções para Quintal e Ar Livre" loading="lazy">
+      <img src="assets/img/offer-b5.webp" alt="40 Invenções para Quintal e Ar Livre" loading="lazy">
       <h3>🎁 40 Invenções para Quintal e Ar Livre</h3>
-      <p class="bonus-price">Bônus #5 · <span>Hoje GRÁTIS</span></p>
+      <p class="bonus-price">De R$ 27,00 por <span>ZERO</span></p>
       <ul class="bonus-list">
         <li>40 projetos para quintal, varanda ou terraço</li>
         <li>Lançadores, cataventos, foguetes de papel e mais</li>
       </ul>
     </div>
+    <div class="bonus-card">
+      <img src="assets/img/offer-avioes.webp" alt="30 Aviões de Papel Recordistas" loading="lazy">
+      <h3>🎁 30 Aviões de Papel Recordistas</h3>
+      <p class="bonus-price">De R$ 27,00 por <span>ZERO</span></p>
+    </div>
+    <div class="bonus-card">
+      <img src="assets/img/offer-barcos.webp" alt="15 Barquinhos que Flutuam" loading="lazy">
+      <h3>🎁 15 Barquinhos que Flutuam</h3>
+      <p class="bonus-price">De R$ 17,00 por <span>ZERO</span></p>
+    </div>
+    <div class="bonus-card">
+      <img src="assets/img/offer-mapa.webp" alt="Mapa de Missões Secretas" loading="lazy">
+      <h3>🎁 Mapa de Missões Secretas</h3>
+      <p class="bonus-price">De R$ 27,00 por <span>ZERO</span></p>
+      <ul class="bonus-list">
+        <li>10 missões</li>
+      </ul>
+    </div>
+    <div class="bonus-card">
+      <img src="assets/img/offer-colorir.webp" alt="Livro de Colorir dos Inventores" loading="lazy">
+      <h3>🎁 Livro de Colorir dos Inventores</h3>
+      <p class="bonus-price">De R$ 17,00 por <span>ZERO</span></p>
+      <ul class="bonus-list">
+        <li>40 páginas</li>
+      </ul>
+    </div>
     <div class="bonus-total">
-      TOTAL: <span>5 BÔNUS</span> · TUDO GRÁTIS HOJE
+      TOTAL EM BÔNUS: <span>R$ 152,00</span> · TUDO GRÁTIS NO PREMIUM
     </div>
   </div>
 
@@ -377,11 +378,12 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
   <div class="pricing">
     <div class="plan-card">
       <div class="plan-name">Plano Básico</div>
-      <div class="plan-price"><sup>R$</sup>27,00</div>
+      <div class="plan-price"><sup>R$</sup>10,00</div>
       <p class="plan-installments">pagamento único</p>
+      <img src="assets/img/offer-only120.webp" alt="Mega Pack de Inventores: 120 projetos em PDF" class="plan-img" loading="lazy">
+      <div class="plan-note">Sem bônus e sem cadernos</div>
       <ul class="plan-features">
-        <li>Mega Pack com +120 projetos passo a passo</li>
-        <li>5 bônus de presente</li>
+        <li>Mega Pack com +120 projetos passo a passo em PDF</li>
         <li>Acesso digital e vitalício</li>
         <li>Garantia de 7 dias</li>
       </ul>
@@ -390,22 +392,24 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
 
     <div class="plan-card featured">
       <div class="plan-name">Plano Premium</div>
-      <div class="plan-price"><sup>R$</sup>47,00</div>
-      <p class="plan-installments">pagamento único</p>
-      <div class="plan-social">Mega Pack + 4 cadernos com mais 154 atividades</div>
-      <img src="assets/img/4-cadernos.webp" alt="Os 4 cadernos do Pequeno Inventor: Robótica com Movimento, O Grande Desafio Inventor, Cientistas em Casa e Tecnologia sem Telas" class="plan-img" loading="lazy">
+      <div class="plan-old-price">Valor Total R$ 199,00</div>
+      <div class="plan-price"><sup>R$</sup>19,00</div>
+      <p class="plan-installments">pagamento único · 90% OFF</p>
+      <div class="plan-social">Só R$ 9 a mais que o Básico: 6 bônus que valem R$&nbsp;152</div>
+      <img src="assets/img/offer-mega-pack.webp" alt="Mega Pack de Inventores completo com os bônus" class="plan-img" loading="lazy">
       <ul class="plan-features">
-        <li>Mega Pack com +120 projetos passo a passo</li>
-        <li>5 bônus de presente</li>
-        <li>Robótica com Movimento: 24 mecanismos</li>
-        <li>O Grande Desafio Inventor: 30 missões com medalhas</li>
-        <li>Cientistas em Casa: 60 experimentos</li>
-        <li>Tecnologia sem Telas: 40 desafios por nível</li>
+        <li>Mega Pack com +120 projetos passo a passo em PDF</li>
+        <li>Os 4 Cadernos: +154 atividades sem telas</li>
+        <li>40 Invenções para Quintal e Ar Livre</li>
+        <li>30 Aviões de Papel Recordistas</li>
+        <li>15 Barquinhos que Flutuam</li>
+        <li>Mapa de Missões Secretas: 10 missões</li>
+        <li>Livro de Colorir dos Inventores: 40 páginas</li>
         <li>Acesso digital e vitalício</li>
         <li>Garantia de 7 dias</li>
       </ul>
       <p style="font-size:13px;text-align:center;color:#7b2d8e;font-weight:600;margin-bottom:12px;">Clique no botão abaixo e garanta já o seu! ↴</p>
-      <a href="https://pay.cakto.com.br/36qa69y" class="plan-cta premium" data-cakto id="btnPremium">SIM, QUERO O PLANO PREMIUM</a>
+      <a href="https://pay.cakto.com.br/egqos63" class="plan-cta premium" data-cakto id="btnPremium">SIM, QUERO O PLANO PREMIUM</a>
     </div>
   </div>
 
@@ -461,15 +465,16 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
     <button class="upsell-close" onclick="closePopup()" aria-label="Fechar">×</button>
     <div class="upsell-emoji">⚠️</div>
     <h2>Peraí! Tem certeza?</h2>
-    <p>Por R$ 27 você leva o Mega Pack com os 5 bônus. <strong>Mas fica sem os 4 cadernos</strong>, com mais 154 atividades para quando ele disser "tô entediado".</p>
+    <p>Por R$&nbsp;10 você leva só os 120 projetos. <strong>Sem os 4 cadernos e sem os outros 5 bônus</strong>, que valem R$&nbsp;152.</p>
     <div style="border:2px solid #e8e0f0;border-radius:14px;padding:20px;margin-bottom:20px;text-align:center;">
       <div style="font-size:14px;font-weight:800;color:#1a1a2e;margin-bottom:8px;">Oferta única: Pack Completo</div>
-      <div style="font-size:36px;font-weight:900;color:#7b2d8e;margin:4px 0;">R$ 47,00</div>
-      <div style="font-size:12px;color:#94a3b8;">Pagamento único · Mega Pack + 5 bônus + 4 cadernos</div>
-      <div style="font-size:12px;color:#16a34a;font-weight:700;margin-top:6px;">Só R$ 20 a mais que o Mega Pack</div>
+      <div style="font-size:13px;color:#999;text-decoration:line-through;">R$ 199,00</div>
+      <div style="font-size:36px;font-weight:900;color:#7b2d8e;margin:4px 0;">R$ 19,00</div>
+      <div style="font-size:12px;color:#94a3b8;">Pagamento único · 120 projetos · 6 bônus</div>
+      <div style="font-size:12px;color:#16a34a;font-weight:700;margin-top:6px;">Só R$ 9 a mais que o Básico</div>
     </div>
-    <a href="https://pay.cakto.com.br/36qa69y" class="upsell-cta-main" data-cakto id="popupPremium">QUERO O COMPLETO POR R$ 47</a>
-    <a href="https://pay.cakto.com.br/366ndhm_1282980" class="upsell-skip" data-cakto id="popupBasico" style="border:none;font-size:12px;color:#b0a8c0;text-decoration:underline;">Não obrigado, quero só o Mega Pack por R$ 27</a>
+    <a href="https://pay.cakto.com.br/egqos63" class="upsell-cta-main" data-cakto id="popupPremium">QUERO O COMPLETO POR R$&nbsp;19</a>
+    <a href="https://pay.cakto.com.br/f8t58dp" class="upsell-skip" data-cakto id="popupBasico" style="border:none;font-size:12px;color:#b0a8c0;text-decoration:underline;">Não obrigado, quero só os 120 projetos por R$&nbsp;10</a>
   </div>
 </div>
 
@@ -558,8 +563,8 @@ window.addEventListener('pageshow', function(){ history.pushState(null, '', loca
     var u;
     try { u = new URL(el.getAttribute('href')); } catch (x) { return; }
     try {
-      var full = u.pathname.indexOf('36qa69y') > -1, val = full ? 47 : 27;
-      var nm = full ? 'Pack completo: Mega Pack + 4 cadernos' : 'Mega Pack de Inventores';
+      var full = u.pathname.indexOf('egqos63') > -1, val = full ? 19 : 10;
+      var nm = full ? 'Pack Completo: Mega Pack + 6 bônus' : 'Mega Pack de Inventores (só 120 projetos)';
       if (typeof window.fbq === 'function') {
         window.fbq('track', 'InitiateCheckout', { value: val, currency: 'BRL', content_type: 'product', content_name: nm, num_items: 1, contents: [{ id: nm, quantity: 1, item_price: val }] });
       }
