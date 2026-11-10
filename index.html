@@ -148,7 +148,7 @@ body { font-family: 'Inter', sans-serif; background: #faf7f2; color: #2d2a26; li
 .prova-carousel:active { cursor: grabbing; }
 .prova-carousel::-webkit-scrollbar { display: none; }
 .prova-card { width: calc(100% - 60px); flex-shrink: 0; scroll-snap-align: center; background: #fff; border: 2px solid #e0d4f0; border-radius: 14px; padding: 22px 20px; text-align: center; user-select: none; }
-.prova-card img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; margin: 0 auto 10px; display: block; pointer-events: none; }
+.prova-card img { width: 190px; height: 190px; border-radius: 16px; object-fit: cover; margin: 0 auto 14px; display: block; pointer-events: none; }
 .prova-name { font-size: 14px; font-weight: 800; color: #4a1a6b; }
 .prova-stars { color: #f5c842; font-size: 16px; margin: 4px 0 10px; letter-spacing: 2px; }
 .prova-quote { font-size: 13px; color: #444; font-style: italic; line-height: 1.55; }
@@ -344,18 +344,29 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
       <img src="assets/img/offer-avioes.webp" alt="30 Aviões de Papel Recordistas" loading="lazy">
       <h3>🎁 30 Aviões de Papel Recordistas</h3>
       <p class="bonus-price">De R$ 27,00 por <span>ZERO</span></p>
+      <ul class="bonus-list">
+        <li>30 modelos com a dobradura explicada passo a passo</li>
+        <li>Seu filho dobra, lança e descobre qual avião voa mais longe</li>
+        <li>Só precisa de folhas de papel</li>
+      </ul>
     </div>
     <div class="bonus-card">
       <img src="assets/img/offer-barcos.webp" alt="15 Barquinhos que Flutuam" loading="lazy">
       <h3>🎁 15 Barquinhos que Flutuam</h3>
       <p class="bonus-price">De R$ 17,00 por <span>ZERO</span></p>
+      <ul class="bonus-list">
+        <li>15 barquinhos de papel com a dobradura passo a passo</li>
+        <li>Do barquinho clássico ao veleiro e ao navio</li>
+        <li>Hora de testar na bacia: qual deles flutua melhor?</li>
+      </ul>
     </div>
     <div class="bonus-card">
       <img src="assets/img/offer-mapa.webp" alt="Mapa de Missões Secretas" loading="lazy">
       <h3>🎁 Mapa de Missões Secretas</h3>
       <p class="bonus-price">De R$ 27,00 por <span>ZERO</span></p>
       <ul class="bonus-list">
-        <li>10 missões</li>
+        <li>10 missões secretas para completar seguindo o mapa do tesouro</li>
+        <li>Transforma a tarde em uma aventura de inventor, longe da tela</li>
       </ul>
     </div>
     <div class="bonus-card">
@@ -363,7 +374,8 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
       <h3>🎁 Livro de Colorir dos Inventores</h3>
       <p class="bonus-price">De R$ 17,00 por <span>ZERO</span></p>
       <ul class="bonus-list">
-        <li>40 páginas</li>
+        <li>40 páginas de robôs, foguetes e invenções para colorir</li>
+        <li>Para os momentos de calma: ele colore e já sonha com a próxima invenção</li>
       </ul>
     </div>
     <div class="bonus-total">
@@ -393,9 +405,9 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
     <div class="plan-card featured">
       <div class="plan-name">Plano Premium</div>
       <div class="plan-old-price">Valor Total R$ 199,00</div>
-      <div class="plan-price"><sup>R$</sup>19,00</div>
-      <p class="plan-installments">pagamento único · 90% OFF</p>
-      <div class="plan-social">Só R$ 9 a mais que o Básico: 6 bônus que valem R$&nbsp;152</div>
+      <div class="plan-price"><sup>R$</sup>27,90</div>
+      <p class="plan-installments">pagamento único</p>
+      <div class="plan-social">Só R$&nbsp;17,90 a mais que o Básico: 6 bônus que valem R$&nbsp;152</div>
       <img src="assets/img/offer-mega-pack.webp" alt="Mega Pack de Inventores completo com os bônus" class="plan-img" loading="lazy">
       <ul class="plan-features">
         <li>Mega Pack com +120 projetos passo a passo em PDF</li>
@@ -409,7 +421,8 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
         <li>Garantia de 7 dias</li>
       </ul>
       <p style="font-size:13px;text-align:center;color:#7b2d8e;font-weight:600;margin-bottom:12px;">Clique no botão abaixo e garanta já o seu! ↴</p>
-      <a href="https://pay.cakto.com.br/egqos63" class="plan-cta premium" data-cakto id="btnPremium">SIM, QUERO O PLANO PREMIUM</a>
+      <!-- LINK PENDENTE: checkout Premium R$ 27,90 -->
+      <a href="#" class="plan-cta premium" data-cakto data-value="27.9" data-name="Pack Completo: Mega Pack + 6 bônus" id="btnPremium">SIM, QUERO O PLANO PREMIUM</a>
     </div>
   </div>
 
@@ -465,16 +478,16 @@ footer { text-align: center; padding: 20px; font-size: 11px; color: #999; border
     <button class="upsell-close" onclick="closePopup()" aria-label="Fechar">×</button>
     <div class="upsell-emoji">⚠️</div>
     <h2>Peraí! Tem certeza?</h2>
-    <p>Por R$&nbsp;10 você leva só os 120 projetos. <strong>Sem os 4 cadernos e sem os outros 5 bônus</strong>, que valem R$&nbsp;152.</p>
+    <p>Por R$&nbsp;10 você leva só os 120 projetos. <strong>Sem bônus, sem os 4 cadernos, sem o mapa de missões.</strong></p>
     <div style="border:2px solid #e8e0f0;border-radius:14px;padding:20px;margin-bottom:20px;text-align:center;">
-      <div style="font-size:14px;font-weight:800;color:#1a1a2e;margin-bottom:8px;">Oferta única: Pack Completo</div>
-      <div style="font-size:13px;color:#999;text-decoration:line-through;">R$ 199,00</div>
-      <div style="font-size:36px;font-weight:900;color:#7b2d8e;margin:4px 0;">R$ 19,00</div>
-      <div style="font-size:12px;color:#94a3b8;">Pagamento único · 120 projetos · 6 bônus</div>
-      <div style="font-size:12px;color:#16a34a;font-weight:700;margin-top:6px;">Só R$ 9 a mais que o Básico</div>
+      <div style="font-size:14px;font-weight:800;color:#1a1a2e;margin-bottom:8px;">Oferta única: Acesso Completo</div>
+      <div style="font-size:13px;color:#999;text-decoration:line-through;">R$ 27,90</div>
+      <div style="font-size:36px;font-weight:900;color:#7b2d8e;margin:4px 0;">R$ 17,90</div>
+      <div style="font-size:12px;color:#94a3b8;">Pagamento único · 120 projetos · Todos os bônus</div>
     </div>
-    <a href="https://pay.cakto.com.br/egqos63" class="upsell-cta-main" data-cakto id="popupPremium">QUERO O COMPLETO POR R$&nbsp;19</a>
-    <a href="https://pay.cakto.com.br/f8t58dp" class="upsell-skip" data-cakto id="popupBasico" style="border:none;font-size:12px;color:#b0a8c0;text-decoration:underline;">Não obrigado, quero só os 120 projetos por R$&nbsp;10</a>
+    <!-- LINK PENDENTE: checkout Premium R$ 17,90 -->
+    <a href="#" class="upsell-cta-main" data-cakto data-value="17.9" data-name="Pack Completo (oferta do popup)" id="popupPremium">QUERO O COMPLETO POR R$&nbsp;17,90</a>
+    <a href="https://pay.cakto.com.br/f8t58dp" class="upsell-skip" data-cakto data-value="10" data-name="Mega Pack de Inventores (só 120 projetos)" id="popupBasico" style="border:none;font-size:12px;color:#b0a8c0;text-decoration:underline;">Não obrigado, quero só o parcial por R$&nbsp;10</a>
   </div>
 </div>
 
@@ -561,11 +574,11 @@ window.addEventListener('pageshow', function(){ history.pushState(null, '', loca
     if (!el) return;
     e.preventDefault();
     var u;
-    try { u = new URL(el.getAttribute('href')); } catch (x) { return; }
+    try { u = new URL(el.getAttribute('href')); } catch (x) { return; } // link ainda pendente: não faz nada
     try {
-      var full = u.pathname.indexOf('egqos63') > -1, val = full ? 19 : 10;
-      var nm = full ? 'Pack Completo: Mega Pack + 6 bônus' : 'Mega Pack de Inventores (só 120 projetos)';
-      if (typeof window.fbq === 'function') {
+      var val = parseFloat(el.getAttribute('data-value')) || 0;
+      var nm = el.getAttribute('data-name') || 'Mega Pack de Inventores';
+      if (typeof window.fbq === 'function' && val > 0) {
         window.fbq('track', 'InitiateCheckout', { value: val, currency: 'BRL', content_type: 'product', content_name: nm, num_items: 1, contents: [{ id: nm, quantity: 1, item_price: val }] });
       }
     } catch (x) {}
